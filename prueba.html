@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos básicos para la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4c295;
+            transition: background-color 0.3s ease;
+        }
+        body:hover {
+            background-color: #d3b186;
+        }
+        /* Estilos para el banner */
+        header {
+            background-color: #9c5533;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease;
+        }
+        header:hover {
+            background-color: #7b4427;
+        }
+        /* Contenedor principal */
+        .container {
+            padding: 2rem;
+        }
+        /* Estilos para la imagen */
+        .image-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        /* Estilos para la información */
+        .info {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.3s ease;
+        }
+        .info:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Flex container para información y múltiples imágenes */
+        .info-flex {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .info-flex .images-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            max-width: 50%;
+        }
+        .info-flex img {
+            width: 100%;
+            height: auto;
+        }
+        /* Estilos para los enlaces */
+        a {
+            color: #9c5533;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #7b4427;
+        }
+        /* Estilos para las listas */
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+        li:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Espacio para insertar una imagen de banner -->
+    <div class="image-container">
+        <img src="benner.jpg" alt="Banner">
+    </div>
+
+    <!-- Banner -->
+    <header>
+        <h1>El mejor café</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Espacios para colocar información con imagen -->
+        <div class="info info-flex">
+            <div>
+                <h2>Nuestra tienda te ofrece:</h2>
+                <p>
+                   Distintos snacks y bebidas para poder acompañarte en tu viaje creativo por ejemplo:
+                </p>
+                <ul>
+                    <li>Café </li>
+                    <li>Té</li>
+                    <li>Chocolate caliente</li>
+                    <li>Refrescos embotellados</li>
+                    <li>Jugos naturales</li>
+                    <li>Gaseosas</li>
+                    <li>Galletas</li>
+                    <li>Papas fritas</li>
+                    <li>Nachos</li>
+                    <li>Barritas de cereal</li>
+                </ul>
+            </div>
+            <div>
+                <img src="cybercafe.jpg" alt="Producto">
+            </div>
+        </div>
+
+        <!-- Sección de accesorios con 4 espacios para fotografías -->
+        <div class="info">
+            <h2>Tambien te ofrecemos accesorios para tu celular y laptop</h2>
+            <ul>
+                <li>Fundas y carcasas para teléfonos: Protección y estilo para diferentes modelos de teléfonos.</li>
+                <li>Protectores de pantalla: Cristales templados o películas protectoras para pantallas de teléfonos y laptops.</li>
+                <li>Cargadores y cables: Incluyendo cargadores rápidos, inalámbricos y cables USB-C, Lightning y micro-USB.</li>
+                <li>Auriculares y audífonos: Tanto con cable como inalámbricos, incluyendo modelos con cancelación de ruido.</li>
+                <li>Soportes y bases: Para teléfonos y laptops, incluyendo soportes ajustables y bases de refrigeración.</li>
+                <li>Teclados y ratones: Inalámbricos y con cable, ergonómicos y de juegos.</li>
+                <li>Power banks (baterías portátiles): De diferentes capacidades para cargar dispositivos sobre la marcha.</li>
+                <li>Adaptadores y hubs: Para expandir puertos USB, conectar HDMI, Ethernet, etc.</li>
+                <li>Tarjetas de memoria y unidades flash USB: Para almacenamiento adicional y transferencia de datos.</li>
+            </ul>
+            <div class="images-grid">
+                <img src="FUNDAS1.png" alt="Accesorio 1">
+                <img src="audifonos.png" alt="Accesorio 2">
+            
+            </div>
+        </div>
+
+        <!-- Espacio para video -->
+        <div class="info">
+            <h2>Menú</h2>
+            <!-- Aquí puedes agregar un iframe para un video -->
+            <iframe width="560" height="315" src="VIDEOciber.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
